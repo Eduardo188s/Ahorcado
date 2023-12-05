@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="container grid-md">
+        <div class="columns">
+            <div class="column col-12">
+                <h5>Adivina la palabra</h5>
+            </div>
+
+            <div class="column col-12">
+                <div class="columns">
+                    <div class="column col-8 col-sm-12">
+                        <div id="word"></div>
+                    </div>
+
+                    <div class="column col-4 col-sm-12">
+                        <img id="palo" src="img/palo.jpg" alt="Palo">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column col-12">
+                <div class="columns bg-gray" id="letras">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/codigo.js"></script>
+    <script src="js/palabras.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', start);
+    </script>
+</body>
+
+</html>
